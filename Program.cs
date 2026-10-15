@@ -7,6 +7,7 @@
             Console.WriteLine("Hejsan grupp 4!");
             Console.WriteLine("Marcus test");
             Console.WriteLine("Oliver bork");
+            Console.WriteLine("Hej test");
         }
     }
 }
