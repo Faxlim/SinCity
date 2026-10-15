@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hejsan grupp 4!");
+            Console.WriteLine("Marcus test");
         }
     }
 }
