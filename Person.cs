@@ -4,6 +4,8 @@ using System.Text;
 
 namespace SinCity
 {
+
+
     internal class Person
     {
         public string Name { get; set; }
@@ -16,9 +18,9 @@ namespace SinCity
 
     class Citizen : Person
     {
-        public Citizen(string name) : base (name)
+        public Citizen(string name) : base(name)
         {
-            
+
         }
     }
 
@@ -42,3 +44,4 @@ namespace SinCity
 
     }
 }
+
