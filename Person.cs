@@ -4,44 +4,44 @@ using System.Text;
 
 namespace SinCity
 {
+   
 
+internal class Person
+{
+    public string Name { get; set; }
 
-    internal class Person
+    public Person(string name)
     {
-        public string Name { get; set; }
-
-        public Person(string name)
-        {
-            Name = name;
-        }
+        Name = name;
     }
+}
 
-    class Citizen : Person
+class Citizen : Person
+{
+    public Citizen(string name) : base(name)
     {
-        public Citizen(string name) : base(name)
-        {
 
-        }
     }
+}
 
-    class Thief : Person
+class Thief : Person
+{
+    public Thief(string name) : base(name)
     {
-        public Thief(string name) : base(name)
-        {
-
-        }
-
 
     }
 
-    class Police : Person
+
+}
+
+class Police : Person
+{
+    public Police(string name) : base(name)
     {
-        public Police(string name) : base(name)
-        {
-
-        }
-
 
     }
+
+
+}
 }
 
