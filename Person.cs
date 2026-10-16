@@ -14,18 +14,31 @@ namespace SinCity
         }
     }
 
-    class Citizen
-    { 
-
-    }
-
-    class Theif
+    class Citizen : Person
     {
-    
+        public Citizen(string name) : base (name)
+        {
+            
+        }
     }
 
-    class Police
-    { 
-    
+    class Thief : Person
+    {
+        public Thief(string name) : base(name)
+        {
+
+        }
+
+
+    }
+
+    class Police : Person
+    {
+        public Police(string name) : base(name)
+        {
+
+        }
+
+
     }
 }
