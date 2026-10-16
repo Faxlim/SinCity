@@ -4,7 +4,8 @@ using System.Text;
 
 namespace SinCity
 {
-    internal class TestPushPull
+    internal class Person
     {
+
     }
 }
