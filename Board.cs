@@ -38,21 +38,30 @@ namespace SinCity
     {
         public City(int width, int height) : base(width, height)
         {
-            width = 100;
-            height = 25;
+           
         }
-        public static void BoardCity(int width, int height)
+        public static void BoardCity(int height1, int width1)
         {
-            for (int i = 0; i < width; i++)
+            for (int i = 0; i < height1; i++)
             {
-                for(int j = 0; j < height; j++)
+                for(int j = 0; j < width1; j++)
                 {
-                    if(i <= width || i >= 0 || j <= height || j >= 0)
+                    if(i == 0 && j == 2)
                     {
-                        Console.Write("X");
+                        Console.Write(" SINCITY ");
+                        j += 9;
+                    }
+                    if(i == height1 -1|| i == 0 || j == width1 -1|| j == 0)
+                    {
+                        Console.Write("█");
                         
 
                     }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+
                 }
                 Console.WriteLine();
             }
