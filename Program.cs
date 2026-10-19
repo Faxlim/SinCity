@@ -50,27 +50,47 @@ namespace SinCity
             Random random = new Random();
 
             List<Person> people = new List<Person>();
+            
             for (int i = 0; i < 20; i++)
             {
                 string name = namnLista[random.Next(namnLista.Length)];
-                people.Add(new Citizen(name));
+                people.Add(new Citizen(name, "C"));
                 
             }
             for (int i = 0; i < 10; i++)
             {
                 string name = namnLista[random.Next(namnLista.Length)];
-                people.Add(new Thief(name));
+                people.Add(new Thief(name, "T"));
 
             }
             for (int i = 0; i < 5; i++)
             {
                 string name = namnLista[random.Next(namnLista.Length)];
-                people.Add(new Police(name));
+                people.Add(new Police(name, "P"));
 
             }
             City.BoardCity(25, 100);
 
-            
+            foreach(Person person in people) 
+            {
+                if(person is Thief)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    
+                }
+                else if (person is Police)
+                {
+                    Console.ForegroundColor = ConsoleColor.Blue;
+
+                }
+                else if (person is Citizen)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                }
+                Console.WriteLine(person.Appearance);
+                Console.ResetColor();
+            }
+
         }
     }
 }
