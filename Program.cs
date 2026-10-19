@@ -68,6 +68,9 @@ namespace SinCity
                 people.Add(new Police(name));
 
             }
+            City.BoardCity(25, 100);
+
+            
         }
     }
 }
