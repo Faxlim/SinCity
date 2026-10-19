@@ -13,17 +13,19 @@ internal class Person
     public string Name { get; set; }
     public string Appearance { get; set; }
     
-    public Person(string name, string appearance)
+    public Person(string name, string appearance, int x, int y)
     {
         Name = name;
         Appearance = appearance;
+        X = x; 
+        Y = y;
         
     }
 }
 
 class Citizen : Person
 {
-    public Citizen(string name, string appearance) : base(name, appearance)
+    public Citizen(string name, string appearance, int x, int y) : base(name, appearance, x, y)
     {
             appearance = "C";
     }
@@ -31,7 +33,7 @@ class Citizen : Person
 
 class Thief : Person
 {
-    public Thief(string name, string appearance) : base(name, appearance)
+    public Thief(string name, string appearance, int x, int y) : base(name, appearance, x, y)
     {
             appearance = "T";
     }
@@ -40,7 +42,7 @@ class Thief : Person
             
 class Police : Person
 {
-    public Police(string name, string appearance) : base(name, appearance)
+    public Police(string name, string appearance, int x, int y) : base(name, appearance, x, y)
     {
             appearance = "P";
     }
